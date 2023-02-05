@@ -1,0 +1,101 @@
+:root {	
+	--accent-2-color: #344e41;
+	--accent-1-color: #3a5a40;
+	--main-color: #588157;
+	--minim-1-color: #a3b18a;
+	--minim-2-color: #dad7cd;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Solitreo', cursive;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)), url(../images/rapace.jpg);
+	background-position: center;
+	background-size: cover;
+}
+
+#logo {
+	width: 20vh;
+}
+
+/* --- Nav bar --- */
+
+#nav-bar {
+	background: linear-gradient(90deg, var(--minim-1-color) 0%, var(--minim-2-color) 100%);
+	align-self: center;
+	height: 50px;
+	width: 400px;
+	padding: 10px;
+	border-radius: 10px 0 0 10px;
+}
+
+#nav-bar ul {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10px;
+	height: 100%;
+}
+
+#nav-bar ul li{
+	background: linear-gradient(90deg, var(--main-color) 0%, rgba(102,130,101,1) 100%);
+	padding: 8px;
+	list-style: none;
+	border-radius: 10px 0;
+}
+
+#nav-bar ul li a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+/* --- Body --- */
+
+#main-elements {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	flex: 1;
+
+	margin: 0 300px 0 300px;
+	padding: 10px;	
+}
+
+.main-element {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	width: 75%;
+	backdrop-filter: blur(5px);
+	border-radius: 10px;
+
+}
+
+.main-element img {
+	width: 15vw;
+}
+
+.main-element p {
+	width: 65%;
+	color: #fff;	
+	font-size: 20px;
+}
+
+.main-element p a{	
+	color: var(--minim-1-color);	
+}

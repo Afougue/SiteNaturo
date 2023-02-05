@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Delphine Limosin - Naturopathie</title>
+	<link rel="stylesheet" href="style-old.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+			<div id="navLinks" class="nav-links" hidden>
+				<i class="fa fa-circle-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">SITE</a></li>
+					<li><a href="tarifs.html">TARIFS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="mentions-legales.html">MENTIONS LÉGALES</a></li>
+				</ul>
+			</div>			
+		</nav>
+		
+		<div class="text-box">
+			<h1>Qu'est-ce que la naturopathie ?</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae. Nam pretium, quam at venenatis dapibus, neque ante tincidunt mauris, ac vehicula enim lacus egestas elit. Integer nunc justo, maximus sit amet velit ac, rutrum porttitor ex. Nulla vitae convallis diam. Quisque bibendum fringilla sem, eu blandit magna interdum a. Ut sed nibh et massa rhoncus tempor. Vestibulum lacinia laoreet quam, a luctus nibh dictum sit amet. Integer mollis ex nec sollicitudin tincidunt. Integer lobortis velit at ornare fringilla. Nulla posuere ornare nunc, vitae molestie tellus volutpat et. </p>
+			<a href="" class="hero-btn">Bouton</a>
+		</div>
+
+	</section>
+
+	<section class="course">
+		<h1>Programmes proposés</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae. Nam pretium, quam at venenatis dapibus, neque ante tincidunt mauris, ac vehicula enim lacus egestas elit. Integer nunc justo, maximus sit amet velit ac, rutrum porttitor ex.</p>
+
+
+		<div class="row">
+			<div class="course-col">
+				<h3>Débutant</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae.</p>
+			</div>
+			<div class="course-col">
+				<h3>Intermédiare</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae.</p>
+			</div>
+			<div class="course-col">
+				<h3>Avancé</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae.</p>
+			</div>
+		</div>
+
+	</section>
+
+	<section class="campus">
+		<h1>Des fleurs</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae.</p>
+
+		<div class="row">
+			<div class="campus-col">
+				<img src="images/fleur1.jpg"/>
+				<div class="layer">
+					<h3>Fleur 1</h3>
+				</div>
+			</div>
+
+			<div class="campus-col">
+				<img src="images/fleur2.jpg"/>
+				<div class="layer">
+					<h3>Fleur 2</h3>
+				</div>
+			</div>
+
+			<div class="campus-col">
+				<img src="images/fleur3.jpg"/>
+				<div class="layer">
+					<h3>Fleur 3</h3>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="facilities">
+		<h1>Localisation - Niort</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae.</p>		
+		<div class="facilities-col">
+			<img src="images/barques.jpg">
+		</div>		
+	</section>
+
+	<section>
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2755.5250341325936!2d-0.5460744842427692!3d46.31926958400086!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48072ed6e839467d%3A0x9d081d330fbf78dd!2s27%20Chem.%20des%20Chenevi%C3%A8res%2C%2079460%20Magn%C3%A9!5e0!3m2!1sfr!2sfr!4v1674996533658!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+		</div>
+	</section>
+
+	<script type="text/javascript">
+		var navLinks = document.getElementById('navLinks')
+
+		function showMenu() {
+			navLinks.removeAttribute("hidden");
+			navLinks.style.right = "-200px"	
+			navLinks.style.right = "0"
+			console.log(navLinks)
+		}
+
+		function hideMenu() {
+			navLinks.style.right = "0"	
+			navLinks.style.right = "-200px"	
+			navLinks.setAttribute("hidden", false)
+			console.log(navLinks)
+		}
+
+	</script>
+</body>
+</html>

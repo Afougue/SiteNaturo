@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Mon super site de naturopathie</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Solitreo&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+	<section class="header">
+		<nav>
+			<a href="index.html"><img src="images/logo.png"></a>
+			<i class="fa fa-bars" onclick="showMenu()"></i>
+			<div id="navLinks" class="nav-links">
+				<i class="fa fa-circle-xmark" onclick="hideMenu()"></i>
+				<ul>
+					<li><a href="index.html">SITE</a></li>
+					<li><a href="tarifs.html">TARIFS</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+					<li><a href="mentions-legales.html">MENTIONS LÉGALES</a></li>
+				</ul>
+			</div>
+			
+		</nav>
+		
+		<div class="text-box">
+			<h1>Contact</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac tellus et nisi egestas tempor id quis ante. Aenean auctor gravida quam, et gravida velit pellentesque vitae. Nam pretium, quam at venenatis dapibus, neque ante tincidunt mauris, ac vehicula enim lacus egestas elit. Integer nunc justo, maximus sit amet velit ac, rutrum porttitor ex. Nulla vitae convallis diam. Quisque bibendum fringilla sem, eu blandit magna interdum a. Ut sed nibh et massa rhoncus tempor. Vestibulum lacinia laoreet quam, a luctus nibh dictum sit amet. Integer mollis ex nec sollicitudin tincidunt. Integer lobortis velit at ornare fringilla. Nulla posuere ornare nunc, vitae molestie tellus volutpat et. </p>
+		</div>
+	</section>
+
+	<section class="course">
+		<h1>
+	</section>
+
+
+
+
+
+
+
+	<script type="text/javascript">
+		var navLinks = document.getElementById('navLinks')
+
+		function showMenu() {
+			navLinks.removeAttribute("hidden");
+			navLinks.style.right = "0"
+			console.log(navLinks)
+		}
+
+		function hideMenu() {
+			navLinks.style.right = "-200px"	
+			navLinks.setAttribute("hidden", false)
+			console.log(navLinks)
+		}
+
+	</script>
+
+</body>
+</html>
