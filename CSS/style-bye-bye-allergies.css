@@ -1,0 +1,35 @@
+#explanations {
+	display: flex;
+	flex-direction: column;
+	gap: 100px;
+	flex: 1;
+
+	margin: auto;
+	padding: 10px;
+	width: 50%;
+}
+
+.explanations-element-body{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+
+	width: 85%;
+}
+
+.explanations-element h1 {
+	text-align:center
+}
+
+.explanations-element-body img {
+	border-radius: 10px;
+}
+
+.explanations-element-text {
+	font-size: 16px;
+	text-align: justify;
+}
+
+.explanations-element-text p {
+	padding-top: 10px;
+}
